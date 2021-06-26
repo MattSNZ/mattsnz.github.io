@@ -1,3 +1,9 @@
+:root {
+    --primary-color: #92140C;
+    --secondary-color: #001D4A;
+    --text-color: #c1b4ae;
+}
+
 *,
 #div-body {
     /*    display: flex;*/
@@ -8,7 +14,7 @@
 #navbar {
     height: 50px;
     width: 100%;
-    background-color: #8b0000;
+    background-color: var(--primary-color);
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
@@ -20,16 +26,16 @@
     font-size: 20px;
     padding: 5px;
     text-align: center;
-    border: 1px solid whitesmoke;
+    border: 1px solid var(--text-color);
     box-sizing: border-box;
     text-decoration: none;
-    color: white;
+    color: var(--text-color);
     margin-right: 10px;
 }
 
 #welcome-section {
     height: 100vh;
-    background-color: seagreen;
+    background-color: var(--secondary-color);
     font-size: 10vh;
     justify-content: center;
     color: #8b0000;
@@ -38,7 +44,7 @@
 }
 
 #project-section {
-    background-color: saddlebrown;
+    background-color: var(--primary-color);
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -47,7 +53,7 @@
 }
 
 #project-section h2 {
-    color: whitesmoke;
+    color: var(--text-color);
     width: 500px;
     text-align: center;
     font-size: 50px;
@@ -60,8 +66,8 @@
 }
 
 .project-button {
-    background-color: whitesmoke;
-    color: saddlebrown;
+    background-color: var(--text-color);
+    color: var(--primary-color);
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -81,13 +87,19 @@
 }
 
 #elsewhere-section {
-    display: flex;
+    background-color: var(--secondary-color);
     height: 75vh;
+    padding: 60px 0;
+}
+
+#elsewhere-section .elsewhere-div {
+    display: flex;
     width: 500px;
-    margin: 60px auto 60px;
+    margin: 0 auto;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-content: center;
+    height: 100%;
 }
 
 #logo-div {
@@ -99,11 +111,18 @@
 }
 
 #elsewhere-section p,
-#elsewhere-section a {
+#elsewhere-section a,
+#elsewhere-section h2 {
     text-align: center;
     font-family: papyrus, Helvetica, sans-serif;
     /*text-decoration: none;*/
-    color: #000
+    color: var(--text-color)
+}
+
+#logo-div {
+    border-radius: 100%;
+    background-color: var(--primary-color);
+    padding: 10px;
 }
 
 

@@ -1,7 +1,7 @@
 :root {
     --primary-color: #92140C;
     --secondary-color: #001D4A;
-    --text-color: #c1b4ae;
+    --text-color: #C1B4AE;
 }
 
 *,
@@ -13,26 +13,30 @@
 #navbar {
     height: 10vh;
     width: 100%;
-    background-color: var(--primary-color);
+    background-color: #07BEB8/*var(--primary-color)*/
+    ;
     display: flex;
     flex-flow: row wrap;
     justify-content: flex-end;
     align-items: center;
     position: fixed;
-    border-bottom: var(--text-color) 1px solid;
+    border-bottom: var(--primary-color) 1px solid;
 }
 
 .navlink {
     width: 150px;
     height: 80%;
     font-size: 3.5vh;
-    padding: 2.25vh 5px;
+    /* padding: 2.25vh 5px; */
     text-align: center;
-    border: 1px solid var(--text-color);
+    border: 1px solid var(--primary-color);
     box-sizing: border-box;
     text-decoration: none;
-    color: var(--text-color);
+    color: var(--primary-color);
     margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #welcome-section {
@@ -53,7 +57,7 @@
 
 #project-section {
     background-color: var(--primary-color);
-    height: 100vh;
+    height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -69,7 +73,6 @@
 }
 
 #div-codepen {
-    height: 500px;
     margin: 20px 0;
 }
 

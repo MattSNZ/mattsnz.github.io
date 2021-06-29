@@ -2,12 +2,42 @@
 
 <head>
     <title>My blog</title>
+    <link href="./styles/main.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
-    <h1>Kia ora Taiao! (Hello World!)</h1>
-    <p> This is the beginning of my website home page.</p>
-    <p> It will eventually contain a list of links to all my blogs. </p>
+    <header>
+        <h1 id="headline" data-heading="Matt's Blog">Matt's Blog</h1>
+    </header>
+    <main>
+        <section id="intro-section">
+            <p> This is the beginning of my website home page.</p>
+            <p> It will eventually contain a list of links to all my blogs. </p>
+        </section>
+        <section id="tiles-section">
+            <ul>
+                <li class="blogpost-tile">
+                    <a href="./blog/template.html" class="blog-link">
+                        <figure>
+                            <img src="./images/waving-hand.png">
+                            <figcaption>My first blog post.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+                <li class="blogpost-tile">
+                    <a href="./blog/blog-2.html" class="blog-link">
+                        <figure>
+                            <img src="./images/smiling-face-with-sunglasses.png">
+                            <figcaption>My technical blog post.</figcaption>
+                        </figure>
+                    </a>
+                </li>
+            </ul>
+        </section>
+        </section>
+    </main>
+    <footer>
+    </footer>
 </body>
 
 </html>

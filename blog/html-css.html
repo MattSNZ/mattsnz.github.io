@@ -1,0 +1,74 @@
+<html>
+
+<head>
+    <title>Tech stuff: Matt's blog</title>
+    <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <link href="../styles/boxmodel.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header id="page-header">
+        <a href="../index.html">
+            <h1 id="headline" data-heading="Matt's Blog">Matt's Blog</h1>
+        </a>
+    </header>
+    <main>
+        <header id="title">
+            <h1>The Box Model as a House</h1>
+        </header>
+        <section id="intro-section">
+            <p> A key part of CSS is using the box model. This uses the combination of content, padding, border, and margin to position HTML elements on the page.</p>
+            <p>It looks like this:</p>
+            <div id="boxmodel">
+                <div id="margin">
+                    <div id="border">
+                        <div id="padding">
+                            <div id="content">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="info-section">
+            <p>A good way to think of the box model is of your element as a house.</p>
+            <p>If the content of the element is the space inside of your house, then the border would be your exterior walls. Between the internal and external walls, is the padding. Hopefully in your case there’s insulation in there amidst all the newspapers
+                and coffee cups that the builders left behind.
+            </p>
+            <p>Wrapping up this terrible metaphor is the margin, which would then be the space between the external walls of your house and the boundary of your property.</p>
+        </section>
+        <section id="fun-section">
+            <h2>Helpful or Interesting Things to Look Out For:</h2>
+            <p>One thing that you need to look out for when spacing your elements is <span style="color:red">margin collapse</span>. While this sounds a bit terrifying, in reality it means that, in some situations, only the larger of the top or bottom margins
+                between elements will be respected. </p>
+            <p>These situations are:</p>
+            <ul id="collapse-list">
+                <li>Adjacent siblings</li>
+                <li>No content separating parents or children</li>
+                <li>Empty blocks</li>
+            </ul>
+            <p>You can find out more at the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank">MDN Web Docs</a>. For now, here's a code example:</p>
+            <div id="code-examples">
+                <div class="code-div">
+                    <h4>HTML</h4>
+                    <code>
+                        <p>Lorem ipsum</p>
+                        <p>The quick brown fox jumps over the lazy dog.</p>
+                    </code>
+                </div>
+                <div class="code-div">
+                    <h4>CSS</h4>
+                    <code>
+                    p {
+                        margin: 10 20 15;
+                    }
+                    </code>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+</body>
+
+</html>

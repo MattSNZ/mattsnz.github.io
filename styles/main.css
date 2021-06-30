@@ -97,8 +97,12 @@ section a {
     color: var(--text-color);
 }
 
-#intro-section {
-    min-height: 30vh;
+#homepage-intro {
+    min-height: 20vh;
+}
+
+#homepage-intro p {
+    text-align: center;
 }
 
 #tiles-section ul {
@@ -181,7 +185,6 @@ figure {
     white-space: pre-wrap;
     width: 100%;
     padding: 0 20px;
-    font-size: 1em;
     box-sizing: border-box;
     color: #FFF;
     margin: 0;

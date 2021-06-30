@@ -51,20 +51,26 @@
             <div id="code-examples">
                 <div class="code-div">
                     <h4>HTML</h4>
-                    <code>
-                        <p>Lorem ipsum</p>
-                        <p>The quick brown fox jumps over the lazy dog.</p>
-                    </code>
+                    <pre><code>
+&lt;p&gt;Lorem ipsum&lt;/p&gt;
+
+&lt;p&gt;The quick brown fox jumps over the lazy dog.&lt;/p&gt;
+</code>
+</pre>
                 </div>
                 <div class="code-div">
                     <h4>CSS</h4>
-                    <code>
-                    p {
-                        margin: 10 20 15;
-                    }
-                    </code>
+                    <pre><code>
+p {
+    margin: 10 20 15;
+}
+</code>
+</pre>
                 </div>
             </div>
+            <p>You might expect a gap of 25px between those two <code>&lt;p&gt;</code> elements but, when the page loads, what will happen is that the <code>margin-bottom</code> of the top element will collapse and you'll be left with 15px between them.</p>
+            <p>One last helpful tip is that you can use <code>element { margin: auto; }</code> with any <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">block element</a> and it will <del>center</del> centre
+                it automatically. So handy!</p>
         </section>
     </main>
     <footer>

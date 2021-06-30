@@ -93,11 +93,6 @@ section p {
     text-align: justify;
 }
 
-#collapse-list {
-    display: inline;
-    align-self: flex-start;
-}
-
 section a {
     color: var(--text-color);
 }
@@ -120,10 +115,9 @@ section a {
     border-radius: 20%;
     text-decoration: none;
     text-align: center;
-    color: #FFF;
+    color: var(--text-color);
     justify-content: center;
     align-items: center;
-    list-style: none;
     margin: 10px;
 }
 
@@ -144,7 +138,60 @@ figure {
 .blog-link {
     text-align: center;
     text-decoration: none;
+    color: var(--text-color);
+}
+
+#collapse-list {
+    display: inline;
+    align-self: flex-start;
+    margin-top: 0;
+}
+
+#collapse-list li {
+    display: list-item;
+    padding: 5px;
+}
+
+#code-examples {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px;
+    width: 100%;
+}
+
+.code-div {
+    display: block;
+    margin: 10px;
+    width: 15vw;
+    height: 15vw;
+    border: 1px #443501 solid;
+    border-radius: 25px;
+    background: gray;
+}
+
+.code-div h4 {
     color: #FFF;
+    margin: 0 20px;
+    padding: 20px;
+    font-size: 2em;
+    text-align: center;
+}
+
+.code-div pre {
+    white-space: pre-wrap;
+    width: 100%;
+    padding: 0 20px;
+    font-size: 1em;
+    box-sizing: border-box;
+    color: #FFF;
+    margin: 0;
+}
+
+code {
+    color: #FFF;
+    font-family: 'Courier New', Courier, monospace;
+    background: gray;
+    padding: 0 2px;
 }
 
 footer {

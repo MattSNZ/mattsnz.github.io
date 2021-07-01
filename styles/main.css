@@ -145,13 +145,13 @@ figure {
     color: var(--text-color);
 }
 
-#collapse-list {
+.actual-list {
     display: inline;
     align-self: flex-start;
     margin-top: 0;
 }
 
-#collapse-list li {
+.actual-list li {
     display: list-item;
     padding: 5px;
 }

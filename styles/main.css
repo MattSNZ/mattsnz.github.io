@@ -1,8 +1,11 @@
+* {
+    --primary-color: #000;
+    --text-color: #C0C0C0;
+}
+
 body {
     margin: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, Helvetica, sans-serif;
-    --primary-color: #000;
-    --text-color: #C0C0C0;
     color: var(--text-color);
     background-color: var(--primary-color);
 }

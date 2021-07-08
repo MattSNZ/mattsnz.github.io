@@ -98,6 +98,7 @@ section p {
 
 section a {
     color: var(--text-color);
+    display: inline;
 }
 
 section img {
@@ -234,4 +235,28 @@ footer a,
 footer p {
     padding-top: 20px;
     color: var(--text-color)
+}
+
+li h4,
+li h4+p {
+    display: inline;
+}
+
+.eq-text {
+    color: limegreen;
+    font-weight: bold;
+}
+
+.iq-text {
+    color: orange;
+    font-style: italic;
+}
+
+.quote-div {
+    background: var(--text-color);
+    color: var(--primary-color);
+    border: 1px solid #443501;
+    margin: 0 10%;
+    border-radius: 20px;
+    text-align: justify;
 }

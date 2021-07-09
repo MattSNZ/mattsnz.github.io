@@ -1,6 +1,8 @@
 * {
     --primary-color: #000;
     --text-color: #C0C0C0;
+    --secondary-color: #443501;
+    --monospace-fonts: 'Courier New', Courier, monospace;
 }
 
 body {
@@ -32,7 +34,7 @@ main {
 
 #page-header {
     height: 15vh;
-    background: linear-gradient(to bottom, #443501 0%, #000000 100%);
+    background: var(--primary-color);
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -44,9 +46,9 @@ header a {
 }
 
 #headline {
-    padding-top: 10px;
+    padding-top: 15px;
     color: #cfc09f;
-    font-family: 'Playfair Display', serif;
+    font-family: var(--monospace-fonts);
     position: relative;
     text-transform: uppercase;
     font-size: 5em;
@@ -57,7 +59,7 @@ header a {
 }
 
 #headline:before {
-    padding-top: 10px;
+    padding-top: 15px;
     content: attr(data-heading);
     left: 0;
     top: 0;
@@ -78,7 +80,6 @@ main header {
 
 main header h1,
 main header h2 {
-    /* margin: 5px; */
     padding: 0;
 }
 
@@ -91,26 +92,18 @@ section {
     margin: 10px;
 }
 
+#tiles-section {
+    width: 80%;
+}
+
 section p {
     width: 100%;
     text-align: justify;
 }
 
-section a {
-    color: var(--text-color);
-    display: inline;
-}
-
-section img {
-    margin: 40px auto;
-}
-
-#homepage-intro {
-    min-height: 20vh;
-}
-
-#homepage-intro p {
-    text-align: center;
+.icon {
+    font-size: 100px;
+    margin: 5px auto;
 }
 
 #tiles-section ul {
@@ -121,16 +114,19 @@ section img {
 }
 
 .blogpost-tile {
-    width: 20vw;
-    height: 20vw;
-    border: #443501 1px solid;
+    width: 225px;
+    height: 225px;
+    border: var(--text-color) 1px solid;
     border-radius: 20%;
     text-decoration: none;
-    text-align: center;
     color: var(--text-color);
     justify-content: center;
     align-items: center;
     margin: 10px;
+}
+
+.blogpost-tile p {
+    text-align: center;
 }
 
 .blogpost-tile a {
@@ -139,11 +135,8 @@ section img {
     display: flex;
     align-content: center;
     justify-content: center;
-}
-
-.blogpost-tile li {
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    text-align: center;
 }
 
 .blogpost-tile figure {
@@ -158,14 +151,15 @@ section img {
     margin: 8px;
 }
 
-figure {
-    margin: 0;
-}
-
 .blog-link {
     text-align: center;
     text-decoration: none;
     color: var(--text-color);
+}
+
+section a {
+    color: var(--text-color);
+    display: inline;
 }
 
 .actual-list {
@@ -189,9 +183,9 @@ figure {
 .code-div {
     display: block;
     margin: 10px;
-    width: 15vw;
-    height: 15vw;
-    border: 1px #443501 solid;
+    width: 220px;
+    height: 220px;
+    border: 1px var(--secondary-color) solid;
     border-radius: 25px;
     background: gray;
 }
@@ -199,7 +193,7 @@ figure {
 .code-div h4 {
     color: #FFF;
     margin: 0 20px;
-    padding: 20px;
+    padding-top: 20px;
     font-size: 2em;
     text-align: center;
 }
@@ -215,14 +209,14 @@ figure {
 
 code {
     color: #FFF;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: var(--monospace-fonts);
     background: gray;
     padding: 0 2px;
 }
 
 footer {
     color: var(--text-color);
-    background: linear-gradient(to bottom, #000000, #443501);
+    background: var(--primary-color);
     bottom: 0;
     height: 15vh;
     width: 100%;

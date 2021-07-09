@@ -113,7 +113,11 @@ section p {
     width: 100%;
 }
 
-.blogpost-tile {
+#tiles-section p {
+    text-align: center;
+}
+
+.tile {
     width: 225px;
     height: 225px;
     border: var(--text-color) 1px solid;
@@ -125,11 +129,11 @@ section p {
     margin: 10px;
 }
 
-.blogpost-tile p {
+.tile p {
     text-align: center;
 }
 
-.blogpost-tile a {
+.tile a {
     height: 100%;
     width: 100%;
     display: flex;
@@ -139,19 +143,19 @@ section p {
     text-align: center;
 }
 
-.blogpost-tile figure {
+.tile figure {
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
 }
 
-.blogpost-tile img {
+.tile img {
     height: 55%;
     margin: 8px;
 }
 
-.blog-link {
+.tile-link {
     text-align: center;
     text-decoration: none;
     color: var(--text-color);

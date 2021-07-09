@@ -1,8 +1,10 @@
-<html>
+<!DOCTYPE html>
+<html lang="eng">
 
 <head>
     <title>About Me: Matt's blog</title>
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
+    <script src="https://kit.fontawesome.com/12da18ac43.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -16,17 +18,43 @@
             <h1>About Me</h1>
         </header>
         <section id="intro-section">
-            <p>I'll write some stuff here.</p>
+            <img src="../images/memoji-thumbs-up.png" alt="">
         </section>
-        <section id="info-section">
-            <p>This is where the really juicy stuff will go</p>
+        <section>
+            <p>After nearly a decade of helping customers and helping the helpers at NZ SaaS companies like <a href="https://www.vendhq.com" target="_blank" rel="nofollow">Vend</a>, <a href="https://mobi2go.com/" target="_blank" rel="nofollow">Mobi2Go</a>,
+                and <a href="https://www.upstock.app/" target="_blank" rel="nofollow">Upstock</a>, I've decided it's time for a change. <span id="kip-technology">I still love technology</span>, so I'm learning to talk to the computers instead of the people.
+            </p>
         </section>
         <section id="tiles-section">
-            <p>This is where I'll link to me on the internet</p>
+            <p>Here are some other places that you can find me on the internet:</p>
+            <ul>
+                <li class="tile">
+                    <a href="https://www.twitter.com/mattsnz" target="_blank" rel="nofollow" class="tile-link">
+                        <i class="fab fa-twitter icon"></i>
+                    </a>
+                </li>
+                <li class="tile">
+                    <a href="https://www.instagram.com/mattsnz" target="_blank" rel="nofollow" class="tile-link">
+                        <i class="fab fa-instagram icon"></i>
+                    </a>
+                </li>
+                <li class="tile">
+                    <a href="https://www.github.com/mattsnz" target="_blank" rel="nofollow" class="tile-link">
+                        <i class="fab fa-github icon"></i>
+                    </a>
+                </li>
+            </ul>
         </section>
     </main>
     <footer>
     </footer>
 </body>
+<script>
+    let kip = document.getElementById('kip-technology');
+    const openVid = () => {
+        window.open('https://www.youtube.com/watch?v=ERCzN91JicA', '_blank');
+    }
+    kip.addEventListener('click', openVid, false);
+</script>
 
 </html>

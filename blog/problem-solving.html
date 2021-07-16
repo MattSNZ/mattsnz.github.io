@@ -20,15 +20,15 @@
             <h2>On Problem Solving</h2>
             <h3 id="something-i-got-blocked-on">Something I got blocked on</h3>
             <p>
-                Recently I got blocked on something that turned out to be a really simple issue. A couple of posts ago, we talked about Flow Control - it turns out there are some really important reasons for running things in order. For example, you can&#39;t run a JavaScript
-                function on an element that doesn&#39;t exist yet! I&#39;d been trying to attach an event listener to a DOM element before that element had been created.
+                Recently I got blocked on something that turned out to be a really simple issue. <a href="./javascript-dom.html">A couple of posts ago</a>, we talked about Flow Control - it turns out there are some really important reasons for running
+                things in order. For example, you can&#39;t run a JavaScript function on an element that doesn&#39;t exist yet!
             </p>
             <p>
                 I tried a whole lot of things. The code itself <em>seemed</em> to be OK. Running the functions in the console worked. Googling the errors didn&#39;t help too much. I even had a facilitator check the code and it looked good to them!
             </p>
             <p>
-                It wasn&#39;t until I got fed up and went for a sulky walk that my brain wandered of its own accord and I what was happening. I moved the <code>&lt;script&gt;</code> element down from the top of the page to the bottom and it worked straight
-                away! <span style="text-decoration: line-through;">Sometimes</span> Usually your subconscious is smarter than you.
+                It wasn&#39;t until I got fed up and went for a sulky walk that my brain wandered of its own accord and I realised what was happening. I&#39;d been trying to attach an event listener to a DOM element before that element had even been created. I moved
+                the <code>&lt;script&gt;</code> element down from the top of the page to the bottom and it worked straight away! <span style="text-decoration: line-through;">Sometimes</span> Usually your subconscious is smarter than you.
             </p>
         </section>
         <section>
@@ -80,28 +80,29 @@
                 <p>At the moment, when I feel like I&#39;ve exhausted other options or can&#39;t make sense of the google results I&#39;ll ask the coaches. Again, I feel like this will become more common once we&#39;re deeper into bootcamp.</p>
             </div>
         </section>
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
 
-            for (i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight) {
-                        content.style.maxHeight = null;
-                        content.style.border = "none";
-                    } else {
-                        content.style.maxHeight = content.scrollHeight + 18 + "px"; //adding 18px as padding
-                        content.style.border = "var(--secondary-color) 1px solid";
-                    }
-                });
-            }
-        </script>
     </main>
     <footer>
     </footer>
 
 </body>
+<script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+        coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight) {
+                content.style.maxHeight = null;
+                content.style.border = "none";
+            } else {
+                content.style.maxHeight = content.scrollHeight + 18 + "px"; //adding 18px as padding
+                content.style.border = "var(--secondary-color) 1px solid";
+            }
+        });
+    }
+</script>
 
 </html>

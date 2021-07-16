@@ -258,3 +258,38 @@ li h4+p {
     border-radius: 20px;
     text-align: justify;
 }
+
+.collapsible {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    border: var(--secondary-color) 1px solid;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 18px;
+    width: 75%;
+    text-align: left;
+    outline: none;
+    font-size: 1.1em;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.active,
+.collapsible:hover {
+    background-color: var(--text-color);
+    color: var(--primary-color);
+}
+
+#collapsible-list div {
+    padding: 0 18px;
+    background-color: var(--primary-color);
+    border: none;
+    color: var(--text-color);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    width: 75%;
+    border-radius: 25px;
+    box-sizing: border-box;
+    /*padding-bottom is added into max-height by JS script*/
+}

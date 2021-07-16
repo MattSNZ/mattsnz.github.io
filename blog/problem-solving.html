@@ -7,7 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../styles/main.css" type="text/css">
     <title>Problem Solving : Matt's Blog</title>
-    <!-- update this-->
 </head>
 
 <body>
@@ -18,25 +17,91 @@
     </header>
     <main>
         <section>
-            <h2>A suitable title</h2>
-            <img src="" alt="">
-            <!--icon from the homepage -->
+            <h2>On Problem Solving</h2>
+            <h3 id="something-i-got-blocked-on">Something I got blocked on</h3>
             <p>
-                <!-- begin your blog -->
+                Recently I got blocked on something that turned out to be a really simple issue. A couple of posts ago, we talked about Flow Control - it turns out there are some really important reasons for running things in order. For example, you can&#39;t run a JavaScript
+                function on an element that doesn&#39;t exist yet! I&#39;d been trying to attach an event listener to a DOM element before that element had been created.
+            </p>
+            <p>
+                I tried a whole lot of things. The code itself <em>seemed</em> to be OK. Running the functions in the console worked. Googling the errors didn&#39;t help too much. I even had a facilitator check the code and it looked good to them!
+            </p>
+            <p>
+                It wasn&#39;t until I got fed up and went for a sulky walk that my brain wandered of its own accord and I what was happening. I moved the <code>&lt;script&gt;</code> element down from the top of the page to the bottom and it worked straight
+                away! <span style="text-decoration: line-through;">Sometimes</span> Usually your subconscious is smarter than you.
             </p>
         </section>
         <section>
+            <h3 id="a-problem-solved-in-an-elegant-way">A problem solved in an elegant way</h3>
             <p>
+                The most elegant way to solve problems is usually by deleting code. I recently had a problem where I&#39;d massively overthought the issue and written far more (messy!) code than I needed to. It worked, but it would have been nearly impossible for someone
+                to come in and make sense of what I&#39;d done.
+            </p>
+            <p>
+                I realised this, so I took a step back and started doing some research on JS Methods. The problem that I was solving was fairly straightforward so I figured that it must have a simple solution. It turns out I was able to remove about 80% of my spaghetti-code
+                and replace it with two methods and some well-defined variables.
+            </p>
+            <p>
+                I learned that taking the time to understand the facilities available to us in the language or framework can make your life a whole lot easier than just diving in and writing code!
             </p>
         </section>
-        <section>
-            <p>
-            </p>
+        <section id="collapsible-list">
+            <h3 id="problem-solving-techniques">Problem solving techniques</h3>
+            <button class="collapsible">Pseudocode</button>
+            <div>
+                <p>I haven&#39;t spent a lot of time or energy on pseudocode yet - I definitely understand the appeal, but it&#39;s not something that jumps to the front of my mind just yet when writing code.</p>
+            </div>
+            <button class="collapsible">Trying something</button>
+            <div>
+                <p>AKA FAFO - This is something that I use a lot. It&#39;s definitely not the most efficient method for problem solving, but sometimes any action feels better than thinking too much about how to solve the problem.</p>
+            </div>
+            <button class="collapsible">Rubber ducky method</button>
+            <div>
+                <p>I love the Rubber Ducky Method. I even have a &quot;rubber ducky&quot; on my desk at home. I&#39;ve solved a lot of self-created problems by explaining, step-by-step, how I&#39;m attempting to solve the issue at hand.</p>
+            </div>
+            <button class="collapsible">Reading error messages</button>
+            <div>
+                <p>Error messages are great at finding the specific problem that&#39;s stopped things in that moment. They can often obscure the root cause, however.</p>
+            </div>
+            <button class="collapsible">Console.logging</button>
+            <div>
+                <p>This is really helpful! Console log all the things!</p>
+            </div>
+            <button class="collapsible">Googling</button>
+            <div>
+                <p>Google is my friend. Skipping google and just asking StackOverflow is great too!</p>
+            </div>
+            <button class="collapsible">Asking your peers for help</button>
+            <div>
+                <p>Right now I haven&#39;t been asking my classmates for help too much, I&#39;m sure this will change as we get deeper into the bootcamp!</p>
+            </div>
+            <button class="collapsible">Asking coaches for help</button>
+            <div>
+                <p>At the moment, when I feel like I&#39;ve exhausted other options or can&#39;t make sense of the google results I&#39;ll ask the coaches. Again, I feel like this will become more common once we&#39;re deeper into bootcamp.</p>
+            </div>
         </section>
+        <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function() {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.maxHeight) {
+                        content.style.maxHeight = null;
+                        content.style.border = "none";
+                    } else {
+                        content.style.maxHeight = content.scrollHeight + 18 + "px"; //adding 18px as padding
+                        content.style.border = "var(--secondary-color) 1px solid";
+                    }
+                });
+            }
+        </script>
     </main>
     <footer>
-
     </footer>
+
 </body>
 
 </html>

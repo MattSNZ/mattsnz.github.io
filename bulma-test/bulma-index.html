@@ -11,97 +11,124 @@
 </head>
 
 <body>
-  <header class="navbar" id="page-header">
-    <h1 class="title is-5" id="headline">Matt's Blog</h1>
+  <header>
+    <div class="hero is-primary">
+      <div class="container">
+        <h1 class="title is-1">Matt's Blog</h1>
+      </div>
+    </div>
   </header>
   <main>
     <section class="container" id="tiles-section">
       <div class="columns is-multiline is-centered">
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/about-me.html" class="tile-link">
-              <i class="far fa-grin-stars icon"></i>
-              <p>A Bit About Me.</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/about-me.html" class="tile-link">
+                <i class="far fa-grin-stars icon"></i>
+                <p>A Bit About Me.</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/html-css.html" class="tile-link">
-              <i class="far fa-file-code icon"></i>
-              <p>My Technical Blog Post.</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/html-css.html" class="tile-link">
+                <i class="far fa-file-code icon"></i>
+                <p>My Technical Blog Post.</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/learning-plan.html" class="tile-link">
-              <i class="fas fa-user-graduate icon"></i>
-              <p>My Learning Plan.</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/learning-plan.html" class="tile-link">
+                <i class="fas fa-user-graduate icon"></i>
+                <p>My Learning Plan.</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/emotional-intelligence.html" class="tile-link">
-              <i class="fas fa-brain icon"></i>
-              <p>Emotional Intelligence.</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/emotional-intelligence.html" class="tile-link">
+                <i class="fas fa-brain icon"></i>
+                <p>Emotional Intelligence.</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/javascript-dom.html" class="tile-link">
-              <i class="fas fa-laptop-code icon"></i>
-              <p>How a Webpage Works.</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/javascript-dom.html" class="tile-link">
+                <i class="fas fa-laptop-code icon"></i>
+                <p>How a Webpage Works.</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/neuroplasticity.html" class="tile-link">
-              <i class="fas fa-book-open icon"></i>
-              <p>Neuroplasticity and Growth Mindset</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/neuroplasticity.html" class="tile-link">
+                <i class="fas fa-book-open icon"></i>
+                <p>Neuroplasticity and Growth Mindset</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="./blog/problem-solving.html" class="tile-link">
-              <i class="fas fa-puzzle-piece icon"></i>
-              <p>Problem Solving</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="./blog/problem-solving.html" class="tile-link">
+                <i class="fas fa-puzzle-piece icon"></i>
+                <p>Problem Solving</p>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="column is-one-quarter card">
-          <div class="card-content">
-            <a href="../minesweeper/" class="tile-link">
-              <i class="fas fa-bomb icon"></i>
-              <p>Minesweeper!</p>
-            </a>
+        <div class="column is-one-quarter">
+          <div class="card">
+            <div class="card-content">
+              <a href="../minesweeper/" class="tile-link">
+                <i class="fas fa-bomb icon"></i>
+                <p>Minesweeper!</p>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
     <section class="container">
-      <form class="box">
-        <h1 class="title is-2">Keep in touch!</h1>
-        <div class="field">
-          <label class="label">Email</label>
-          <div class="control">
-            <input class="input" type="email" placeholder="e.g. alex@example.com">
+      <div class="columns">
+        <div class="column"></div>
+        <div class="column is-half">
+          <div class="box">
+            <form>
+              <h1 class="title is-2">Keep in touch!</h1>
+              <div class="field">
+                <label class="label">Name</label>
+                <div class="control">
+                  <input class="input" type="text" placeholder="Alex">
+                </div>
+              </div>
+              <div class="field">
+                <label class="label">Email</label>
+                <div class="control">
+                  <input class="input" type="email" placeholder="e.g. alex@example.com">
+                </div>
+              </div>
+              <button class="button is-primary">Submit</button>
+            </form>
           </div>
         </div>
+        <div class="column"></div>
+      </div>
 
-        <div class="field">
-          <label class="label">Password</label>
-          <div class="control">
-            <input class="input" type="password" placeholder="********">
-          </div>
-        </div>
-
-        <button class="button is-primary">Sign in</button>
-      </form>
     </section>
   </main>
   <footer>

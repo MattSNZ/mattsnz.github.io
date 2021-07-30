@@ -18,7 +18,7 @@
   align-items: center;
 }
 
-.icon {
+.card-content .icon {
   height: 50px;
   font-size: 3em;
   padding: 12px;
@@ -29,10 +29,6 @@
   width: 100%;
 }
 
-.content h3 {
-  text-align: center;
-}
-
-.content p {
-  text-align: justify;
+.content {
+  max-width: 850px;
 }

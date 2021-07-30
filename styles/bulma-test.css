@@ -32,3 +32,11 @@
 .content {
   max-width: 850px;
 }
+
+a:not(.content *) {
+  color: #4a4a4a;
+}
+
+a:hover:not(.content *) {
+  color: #485fc7;
+}

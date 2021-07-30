@@ -7,17 +7,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://kit.fontawesome.com/12da18ac43.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
-  <!-- <link rel="stylesheet" href="./test.css" type="text/css"> -->
+  <link rel="stylesheet" href="./test.css" type="text/css">
   <title>BLOG TITLE : Matt's Blog</title>
 </head>
 
 <body>
   <header>
-    <section class="hero is-dark">
+    <div class="hero is-dark is-small">
       <div class="hero-body">
-        <h1 class="title is-light is-1">Matt's Blog</h1>
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <h1 class="title is-1">Matt's Website</h1>
+            </div>
+          </div>
+          <div class="level-right">
+            <img src="../images/memoji-thumbs-up.png" alt="a memoji of me doing a thumbs up" class="image is-128x128">
+          </div>
+        </div>
       </div>
-    </section>
+    </div>
   </header>
   <main>
     <div class="container">
@@ -39,7 +48,14 @@
               <span>Blog</span>
             </a>
           </li>
-          <li class="is-active"><a href="#">BLOG TITLE</a></li>
+          <li class="is-active">
+            <a href="#">
+              <span class="icon is-small">
+												<i class="fas fa-brain"></i>
+										</span>
+              <span>BLOG TITLE</span>
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="container is-max-desktop">

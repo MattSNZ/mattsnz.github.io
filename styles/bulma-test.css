@@ -40,3 +40,15 @@ a:not(.content *) {
 a:hover:not(.content *) {
   color: #485fc7;
 }
+
+span.eq-text,
+li.eq-text {
+  color: limegreen;
+  font-weight: bold;
+}
+
+span.iq-text,
+li.iq-text {
+  color: orange;
+  font-style: italic;
+}

@@ -2,107 +2,250 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="../styles/main.css" type="text/css">
-    <title>Problem Solving : Matt's Blog</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/12da18ac43.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../styles/bulma-test.css" type="text/css">
+  <title>Problem Solving : Matt's Blog</title>
 </head>
 
 <body>
-    <header id="page-header">
-        <a href="../index.html">
-            <h1 id="headline" data-heading="Matt's Blog">Matt's Blog</h1>
-        </a>
-    </header>
-    <main>
-        <section>
-            <h2>On Problem Solving</h2>
-            <h3 id="something-i-got-blocked-on">Something I got blocked on</h3>
+  <header>
+    <div class="hero is-dark is-small">
+      <div class="hero-body">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <h1 class="title is-1">Matt's Website</h1>
+            </div>
+          </div>
+          <div class="level-right">
+            <img src="../images/memoji-thumbs-up.png" alt="a memoji of me doing a thumbs up" class="image is-pulled-right is-128x128">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="container">
+      <nav class="breadcrumb is-dark has-succeeds-separator">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <span class="icon is-small">
+								<i class="fas fa-home" aria-hidden="true"></i>
+							</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+								<i class="fas fa-book" aria-hidden="true"></i>
+							</span>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li class="is-active">
+            <a href="#">
+              <span class="icon is-small">
+								<i class="fas fa-puzzle-piece"></i>
+							</span>
+              <span>Problem Solving</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container is-max-desktop">
+        <div class="content is-dark has-text-justified">
+          <div class="block">
+            <h1 class="title is-2 has-text-centered">On Problem Solving</h1>
+            <h3 class="subtitle is-5 has-text-centered">Something I Was Blocked On</h3>
             <p>
-                Recently I got blocked on something that turned out to be a really simple issue. <a href="./javascript-dom.html">A couple of posts ago</a>, we talked about Flow Control - it turns out there are some really important reasons for running
-                things in order. For example, you can&#39;t run a JavaScript function on an element that doesn&#39;t exist yet!
+              Recently I got blocked on something that turned out to be a really simple issue. <a href="./javascript-dom.html">A couple of posts ago</a>, we talked about Flow Control - it turns out there are some really important reasons for running things
+              in order. For example, you can&#39;t run a JavaScript function on an element that doesn&#39;t exist yet!
             </p>
             <p>
-                I tried a whole lot of things. The code itself <em>seemed</em> to be OK. Running the functions in the console worked. Googling the errors didn&#39;t help too much. I even had a facilitator check the code and it looked good to them!
+              I tried a whole lot of things. The code itself <em>seemed</em> to be OK. Running the functions in the console worked. Googling the errors didn&#39;t help too much. I even had a facilitator check the code and it looked good to them!
             </p>
             <p>
-                It wasn&#39;t until I got fed up and went for a sulky walk that my brain wandered of its own accord and I realised what was happening. I&#39;d been trying to attach an event listener to a DOM element before that element had even been created. I moved
-                the <code>&lt;script&gt;</code> element down from the top of the page to the bottom and it worked straight away! <span style="text-decoration: line-through;">Sometimes</span> Usually your subconscious is smarter than you.
+              It wasn&#39;t until I got fed up and went for a sulky walk that my brain wandered of its own accord and I realised what was happening. I&#39;d been trying to attach an event listener to a DOM element before that element had even been created. I moved
+              the <code>&lt;script&gt;</code> element down from the top of the page to the bottom and it worked straight away! <span style="text-decoration: line-through;">Sometimes</span> Usually your subconscious is smarter than you.
             </p>
-        </section>
-        <section>
-            <h3 id="a-problem-solved-in-an-elegant-way">A problem solved in an elegant way</h3>
+          </div>
+          <div class="block">
+            <h3 class="subtitle is-5 has-text-centered">A problem solved in an elegant way</h3>
             <p>
-                The most elegant way to solve problems is usually by deleting code. I recently had a problem where I&#39;d massively overthought the issue and written far more (messy!) code than I needed to. It worked, but it would have been nearly impossible for someone
-                to come in and make sense of what I&#39;d done.
-            </p>
-            <p>
-                I realised this, so I took a step back and started doing some research on JS Methods. The problem that I was solving was fairly straightforward so I figured that it must have a simple solution. It turns out I was able to remove about 80% of my spaghetti-code
-                and replace it with two methods and some well-defined variables.
+              The most elegant way to solve problems is usually by deleting code. I recently had a problem where I&#39;d massively overthought the issue and written far more (messy!) code than I needed to. It worked, but it would have been nearly impossible for someone
+              to come in and make sense of what I&#39;d done.
             </p>
             <p>
-                I learned that taking the time to understand the facilities available to us in the language or framework can make your life a whole lot easier than just diving in and writing code!
+              I realised this, so I took a step back and started doing some research on JS Methods. The problem that I was solving was fairly straightforward so I figured that it must have a simple solution. It turns out I was able to remove about 80% of my spaghetti-code
+              and replace it with two methods and some well-defined variables.
             </p>
-        </section>
-        <section id="collapsible-list">
-            <h3 id="problem-solving-techniques">Problem solving techniques</h3>
-            <button class="collapsible">Pseudocode</button>
-            <div>
-                <p>I haven&#39;t spent a lot of time or energy on pseudocode yet - I definitely understand the appeal, but it&#39;s not something that jumps to the front of my mind just yet when writing code.</p>
+            <p>
+              I learned that taking the time to understand the facilities available to us in the language or framework can make your life a whole lot easier than just diving in and writing code!
+            </p>
+          </div>
+          <div class="block">
+            <h3 class="subtitle is-5 has-text-centered">Problem solving techniques</h3>
+            <div class="columns">
+              <div class="column"></div>
+              <div class="column is-four-fifths" id="collapsible-list">
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Pseudocode</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>I haven&#39;t spent a lot of time or energy on pseudocode yet - I definitely understand the appeal, but it&#39;s not something that jumps to the front of my mind just yet when writing code.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Trying something</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>AKA <span title="Fuck Around and Find Out"><u>FAFO</u></span> - This is something that I use a lot. It&#39;s definitely not the most efficient method for problem solving, but sometimes any action feels better than thinking too much
+                        about how to solve the problem.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Rubber ducky method</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>I love the Rubber Ducky Method. I even have a &quot;rubber ducky&quot; on my desk at home. I&#39;ve solved a lot of self-created problems by explaining, step-by-step, how I&#39;m attempting to solve the issue at hand.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Reading error messages</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>Error messages are great at finding the specific problem that&#39;s stopped things in that moment. They can often obscure the root cause, however.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Console.logging</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>This is really helpful! Console log all the things!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Googling</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>Google is my friend. Skipping Google and just asking StackOverflow is great too!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title">Asking your peers for help</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>Right now I haven&#39;t been asking my classmates for help too much, I&#39;m sure this will change as we get deeper into the bootcamp!</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="card-header collapsible">
+                    <p class="card-header-title has-text-centered">Asking coaches for help</p>
+                    <button class="card-header-icon" aria-label="more options">
+											<span class="icon">
+											<i class="fas fa-angle-down" aria-hidden="true"></i>
+											</span>
+										</button>
+                  </div>
+                  <div class="card-content">
+                    <div>
+                      <p>At the moment, when I feel like I&#39;ve exhausted other options or can&#39;t make sense of the Google results I&#39;ll ask the coaches. Again, I feel like this will become more common once we&#39;re deeper into bootcamp.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column"></div>
             </div>
-            <button class="collapsible">Trying something</button>
-            <div>
-                <p>AKA FAFO - This is something that I use a lot. It&#39;s definitely not the most efficient method for problem solving, but sometimes any action feels better than thinking too much about how to solve the problem.</p>
-            </div>
-            <button class="collapsible">Rubber ducky method</button>
-            <div>
-                <p>I love the Rubber Ducky Method. I even have a &quot;rubber ducky&quot; on my desk at home. I&#39;ve solved a lot of self-created problems by explaining, step-by-step, how I&#39;m attempting to solve the issue at hand.</p>
-            </div>
-            <button class="collapsible">Reading error messages</button>
-            <div>
-                <p>Error messages are great at finding the specific problem that&#39;s stopped things in that moment. They can often obscure the root cause, however.</p>
-            </div>
-            <button class="collapsible">Console.logging</button>
-            <div>
-                <p>This is really helpful! Console log all the things!</p>
-            </div>
-            <button class="collapsible">Googling</button>
-            <div>
-                <p>Google is my friend. Skipping google and just asking StackOverflow is great too!</p>
-            </div>
-            <button class="collapsible">Asking your peers for help</button>
-            <div>
-                <p>Right now I haven&#39;t been asking my classmates for help too much, I&#39;m sure this will change as we get deeper into the bootcamp!</p>
-            </div>
-            <button class="collapsible">Asking coaches for help</button>
-            <div>
-                <p>At the moment, when I feel like I&#39;ve exhausted other options or can&#39;t make sense of the google results I&#39;ll ask the coaches. Again, I feel like this will become more common once we&#39;re deeper into bootcamp.</p>
-            </div>
-        </section>
-
-    </main>
-    <footer>
-    </footer>
+          </div>
+        </div>
+        <div class="block"></div>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+  </footer>
 
 </body>
 <script>
-    var coll = document.getElementsByClassName("collapsible");
-    var i;
+  var coll = document.getElementsByClassName('collapsible');
+  var i;
 
-    for (i = 0; i < coll.length; i++) {
-        coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.maxHeight) {
-                content.style.maxHeight = null;
-                content.style.border = "none";
-            } else {
-                content.style.maxHeight = content.scrollHeight + 18 + "px"; //adding 18px as padding
-                content.style.border = "var(--secondary-color) 1px solid";
-            }
-        });
+  for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener('click', openSesame)
+  }
+
+  function openSesame() {
+    // this.classList.toggle('active');
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      content.style.maxHeight = null;
+    } else {
+      content.style.maxHeight = content.scrollHeight + 48 + "px";
     }
+    this.lastElementChild.firstElementChild.firstElementChild.classList.toggle('open')
+  };
 </script>
 
 </html>

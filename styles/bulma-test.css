@@ -1,0 +1,47 @@
+a:not(.content *) {
+  color: #4a4a4a;
+}
+
+a:hover:not(.content *) {
+  color: #485fc7;
+}
+
+span.eq-text,
+li.eq-text {
+  color: limegreen;
+  font-weight: bold;
+}
+
+span.iq-text,
+li.iq-text {
+  color: orange;
+  font-style: italic;
+}
+
+#collapsible-list .card-content {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  padding: 0 24px;
+  box-sizing: border-box;
+  max-height: 0;
+}
+
+#collapsible-list .card-content p {
+  margin: 24px 0;
+}
+
+.card-header-icon .fa-angle-down {
+  transform: rotate(0deg);
+  transition: transform 0.2s linear;
+}
+
+.card-header-icon .fa-angle-down.open {
+  transform: rotate(180deg);
+  transition: transform 0.2s linear;
+}
+
+#collapsible-list .card-header-title {
+  margin: 0;
+}

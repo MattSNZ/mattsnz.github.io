@@ -2,60 +2,110 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../styles/main.css" type="text/css">
-  <title>Learning Plan: Matt's Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/12da18ac43.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <link rel="stylesheet" href="../styles/bulma-test.css" type="text/css">
+  <title>Learning Plan : Matt's Blog</title>
 </head>
 
 <body>
-  <header id="page-header">
-    <a href="../index.html">
-      <h1 id="headline" data-heading="Matt's Blog">Matt's Blog</h1>
-    </a>
+  <header>
+    <div class="hero is-dark is-small">
+      <div class="hero-body">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <h1 class="title is-1">Matt's Website</h1>
+            </div>
+          </div>
+          <div class="level-right">
+            <img src="../images/memoji-thumbs-up.png" alt="a memoji of me doing a thumbs up" class="image is-128x128">
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <main>
-    <section>
-      <h2>My Learning Plan</h2>
-      <p>My long-term goal is to build a career as a web developer. After finishing at EDA, my ideal employer is a digital agency of some description. I feel like this will give me a good breadth of experience with different clients in the outside world.
-        Ultimately, I'd like to work at a product-led SaaS company.</p>
-      <p>I think my interest in learning for knowledge's sake will be really helpful. Even just so far, it's helped me to understand how some technologies work by reading deeper on a subject than just applying what the docs or examples say.</p>
-      <p>One of the "soft" skills that I'd most like to get out of my time at EDA is to be able to work effectively in the software development process. I'm also looking forward to working as a team on the same problems - I've mostly worked alone on things
-        over the last few years.</p>
-      <p>I will manage my workload by blocking out times to focus and minimising distractions. Some of the ways I'll do this will be enabling DND mode on Slack, or even closing it entirely; moving my non-learning internet time to a different browser; and
-        leaving my phone in my jacket or bag so I'm not distracted by notifications.</p>
-      <p>If I feel myself getting into the weeds, I'll stop entirely and take stock of what's outstanding and where I am in each process. From there I will prioritise according to deadline or importance and work until I've finished the piece of work that
-        I'm focussing on. If I still feel like I'm getting too far behind I'll contact my facilitator or a teacher as soon as is feasible to help work out a plan to get things back on track.</p>
-      <p>I expect the faciliation team to assist being willing and able to assist and provide experience when it's necessary. I hope that they'll point me in the direction of the answer, rather than just providing it outright.</p>
-      <p>I do have some family commitments, which I've blocked into my calendar. Most days I'll need to drop my kids at daycare or school, but I plan (as much as you can with young kids) to still be onsite by 9am for the start of the day. I'll be trying
-        to leave early a couple of times a week to pick my youngest up from daycare, but a couple of times a week, as needed, I'll also stay late in order to get projects complete. I have a good setup for working from home after the kids have gone to
-        bed on nights when I've had to leave campus early to put my Dad hat on.</p>
-    </section>
-    <section>
-      <h2>Update at the end of Foundations</h2>
-      <h3>What is your long term goal and/or career pathway?</h3>
-      <p>In the longer term, my goal is to be a developer at a product SaaS (or similar) company. Ideally, this would be working with an industry or field that I care about or have experience in. In the nearer term, I think I'd like to work at a digital
-        agency of some sort in order to get exposure to as many different technologies as possible before moving back into product world.</p>
-      <h3>What do you think your biggest strengths and limitations will be in Bootcamp?</h3>
-      <p>I think my strengths in Bootcamp will be my knowledge of the technology involved and experience with problem-solving for web applications.</p>
-      <p>The limitations I see coming up are that I'm <em>very</em> distractable. Even just in writing this, I've taken a couple of detours into learning about various flavours of Markdown. (I draft in a <code>.md</code> file and then convert to HTML(this
-        in itself is a technique to avoid the distraction of tinkering with the HTML of my blog while writing it!))</p>
-      <h3>What do you think your biggest non-technical challenge at Bootcamp will be?</h3>
-      <p>Without question the largest non-technical challenge of Bootcamp is going to be juggling Bootcamp with my non-negotiable family duties. I'm responsible for getting my two kids to their various weekday activities (daycare and school) and I know that
-        it's going to be a challenge to make it in every morning by 8:45. This has been exacerbated by the fact that the doctors have told me not to ride my bike for a few weeks following my surgery, so I'm reliant on the busses.</p>
-      <h3>What non-technical skills - human skills - would you like to see developed in yourself while at EDA?</h3>
-      <p>I'd really like to develop some techniques for improving my focus and reflective skills. Learning some best practices for how to work as part of a development team would be really helpful for my career plans as well.</p>
-      <h3>What are your expectations from the Bootcamp team?</h3>
-      <p>A lot is being asked of us, as a time commitment over the next few weeks, so my expectation is that the team will be present with us while here and put that time to good use. When we need assistance with our work, they'll provide useful advice -
-        pointing us in the direction of a solution, instead of solving the problems for us.</p>
-      <h3>What are your expectations of yourself on Bootcamp</h3>
-      <p>My expectations of myself is that I commit to Bootcamp fully, seeking help from my peers and teachers/facilitators as needed.</p>
-      <p>I will manage my workload by breaking down work into pieces and planning the timelines, with the deadline in mind, accordingly.</p>
-      <p>I will treat everyone that I come into contact with according to the golden rule, as I would want to be treated, with kindness and respect.</p>
-    </section>
-    <footer></footer>
+    <div class="container">
+      <nav class="breadcrumb is-dark has-succeeds-separator">
+        <ul>
+          <li>
+            <a href="../index.html">
+              <span class="icon is-small">
+												<i class="fas fa-home" aria-hidden="true"></i>
+											</span>
+              <span>Home</span>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <span class="icon is-small">
+												<i class="fas fa-book" aria-hidden="true"></i>
+											</span>
+              <span>Blog</span>
+            </a>
+          </li>
+          <li class="is-active">
+            <a href="#">
+              <span class="icon is-small">
+														<i class="fas fa-user-graduate"></i>
+												</span>
+              <span>My Learning Plan</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <div class="container is-max-desktop">
+        <div class="content has-text-justified is-dark">
+          <div class="block">
+            <h1 class="title is-2 has-text-centered">My Learning Plan</h1>
+            <p>My long-term goal is to build a career as a web developer. After finishing at EDA, my ideal employer is a digital agency of some description. I feel like this will give me a good breadth of experience with different clients in the outside
+              world. Ultimately, I'd like to work at a product-led SaaS company.</p>
+            <p>I think my interest in learning for knowledge's sake will be really helpful. Even just so far, it's helped me to understand how some technologies work by reading deeper on a subject than just applying what the docs or examples say.</p>
+            <p>One of the "soft" skills that I'd most like to get out of my time at EDA is to be able to work effectively in the software development process. I'm also looking forward to working as a team on the same problems - I've mostly worked alone on
+              things over the last few years.</p>
+            <p>I will manage my workload by blocking out times to focus and minimising distractions. Some of the ways I'll do this will be enabling DND mode on Slack, or even closing it entirely; moving my non-learning internet time to a different browser;
+              and leaving my phone in my jacket or bag so I'm not distracted by notifications.</p>
+            <p>If I feel myself getting into the weeds, I'll stop entirely and take stock of what's outstanding and where I am in each process. From there I will prioritise according to deadline or importance and work until I've finished the piece of work
+              that I'm focussing on. If I still feel like I'm getting too far behind I'll contact my facilitator or a teacher as soon as is feasible to help work out a plan to get things back on track.</p>
+            <p>I expect the faciliation team to assist being willing and able to assist and provide experience when it's necessary. I hope that they'll point me in the direction of the answer, rather than just providing it outright.</p>
+            <p>I do have some family commitments, which I've blocked into my calendar. Most days I'll need to drop my kids at daycare or school, but I plan (as much as you can with young kids) to still be onsite by 9am for the start of the day. I'll be trying
+              to leave early a couple of times a week to pick my youngest up from daycare, but a couple of times a week, as needed, I'll also stay late in order to get projects complete. I have a good setup for working from home after the kids have gone
+              to bed on nights when I've had to leave campus early to put my Dad hat on.</p>
+          </div>
+          <div class="block">
+            <h2 class="title is-2 has-text-centered">Update at the end of Foundations</h2>
+            <h3 class="subtitle is-5 has-text-centered">What is your long term goal and/or career pathway?</h3>
+            <p>In the longer term, my goal is to be a developer at a product SaaS (or similar) company. Ideally, this would be working with an industry or field that I care about or have experience in. In the nearer term, I think I'd like to work at a digital
+              agency of some sort in order to get exposure to as many different technologies as possible before moving back into product world.</p>
+            <h3 class="subtitle is-5 has-text-centered">What do you think your biggest strengths and limitations will be in Bootcamp?</h3>
+            <p>I think my strengths in Bootcamp will be my knowledge of the technology involved and experience with problem-solving for web applications.</p>
+            <p>The limitations I see coming up are that I'm <em>very</em> distractable. Even just in writing this, I've taken a couple of detours into learning about various flavours of Markdown. (I draft in a <code>.md</code> file and then convert to HTML(this
+              in itself is a technique to avoid the distraction of tinkering with the HTML of my blog while writing it!))</p>
+            <h3 class="subtitle is-5 has-text-centered">What do you think your biggest non-technical challenge at Bootcamp will be?</h3>
+            <p>Without question the largest non-technical challenge of Bootcamp is going to be juggling Bootcamp with my non-negotiable family duties. I'm responsible for getting my two kids to their various weekday activities (daycare and school) and I
+              know that it's going to be a challenge to make it in every morning by 8:45. This has been exacerbated by the fact that the doctors have told me not to ride my bike for a few weeks following my surgery, so I'm reliant on the busses.</p>
+            <h3 class="subtitle is-5 has-text-centered">What non-technical skills - human skills - would you like to see developed in yourself while at EDA?</h3>
+            <p>I'd really like to develop some techniques for improving my focus and reflective skills. Learning some best practices for how to work as part of a development team would be really helpful for my career plans as well.</p>
+            <h3 class="subtitle is-5 has-text-centered">What are your expectations from the Bootcamp team?</h3>
+            <p>A lot is being asked of us, as a time commitment over the next few weeks, so my expectation is that the team will be present with us while here and put that time to good use. When we need assistance with our work, they'll provide useful advice
+              - pointing us in the direction of a solution, instead of solving the problems for us.</p>
+            <h3 class="subtitle is-5 has-text-centered">What are your expectations of yourself on Bootcamp</h3>
+            <p>My expectations of myself is that I commit to Bootcamp fully, seeking help from my peers and teachers/facilitators as needed.</p>
+            <p>I will manage my workload by breaking down work into pieces and planning the timelines, with the deadline in mind, accordingly.</p>
+            <p>I will treat everyone that I come into contact with according to the golden rule, as I would want to be treated, with kindness and respect.</p>
+          </div>
+        </div>
+        <div class="block"></div>
+      </div>
+    </div>
   </main>
+  <footer class=" footer "></footer>
+
 
 </body>
 

@@ -60,11 +60,11 @@
         </ul>
       </nav>
       <div class="container is-max-desktop">
-        <div class="content is-dark">
+        <div class="content has-text-justified is-dark">
           <div class="block">
             <h1 class="title is-2 has-text-centered">The Box Model as a House</h1>
-            <p class="has-text-justified"> A key part of CSS is using the box model. This uses the combination of content, padding, border, and margin to position HTML elements on the page.</p>
-            <p class="has-text-justified">It looks like this:</p>
+            <p> A key part of CSS is using the box model. This uses the combination of content, padding, border, and margin to position HTML elements on the page.</p>
+            <p>It looks like this:</p>
             <div class="container" id="boxmodel">
               <div id="margin">
                 <div id="border">
@@ -77,20 +77,20 @@
             </div>
             <div class="block"></div>
             <p class="has-text-justified has-text-weight-semibold">A good way to think of the box model is of your element as a house.</p>
-            <p class="has-text-justified">If the content of the element is the space inside of your house, then the border would be your exterior walls. Between the internal and external walls, is the padding. Hopefully in your case there’s insulation in there amidst all the newspapers
+            <p>If the content of the element is the space inside of your house, then the border would be your exterior walls. Between the internal and external walls, is the padding. Hopefully in your case there’s insulation in there amidst all the newspapers
               and coffee cups that the builders left behind.
             </p>
-            <p class="has-text-justified">Wrapping up this terrible metaphor is the margin, which would then be the space between the external walls of your house and the boundary of your property.</p>
+            <p>Wrapping up this terrible metaphor is the margin, which would then be the space between the external walls of your house and the boundary of your property.</p>
             <h2 class="title is-5">Helpful or Interesting Things to Look Out For:</h2>
-            <p class="has-text-justified">One thing that you need to look out for when spacing your elements is <span style="color:red">margin collapse</span>. While this sounds a bit terrifying, in reality it means that, in some situations, only the larger of the top or bottom margins
+            <p>One thing that you need to look out for when spacing your elements is <span style="color:red">margin collapse</span>. While this sounds a bit terrifying, in reality it means that, in some situations, only the larger of the top or bottom margins
               between elements will be respected. </p>
-            <p class="has-text-justified">These situations are:</p>
+            <p>These situations are:</p>
             <ul class="actual-list">
               <li>Adjacent siblings</li>
               <li>No content separating parents or children</li>
               <li>Empty blocks</li>
             </ul>
-            <p class="has-text-justified">You can find out more at the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank">MDN Web Docs</a>. For now, here's a code example:</p>
+            <p>You can find out more at the <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank">MDN Web Docs</a>. For now, here's a code example:</p>
             <div class="container">
               <div class="columns">
                 <div class="column is-half">
@@ -118,8 +118,8 @@ margin: 10 20 15;
               </div>
             </div>
             <div class="block"></div>
-            <p class="has-text-justified">You might expect a gap of 25px between those two <code>&lt;p&gt;</code> elements but, when the page loads, what will happen is that the <code>margin-bottom</code> of the top element will collapse and you'll be left with 15px between them.</p>
-            <p class="has-text-justified">One last helpful tip is that you can use <code>element { margin: auto; }</code> with any <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">block element</a> and it will <del>center</del> centre
+            <p>You might expect a gap of 25px between those two <code>&lt;p&gt;</code> elements but, when the page loads, what will happen is that the <code>margin-bottom</code> of the top element will collapse and you'll be left with 15px between them.</p>
+            <p>One last helpful tip is that you can use <code>element { margin: auto; }</code> with any <a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Block-level_elements" target="_blank">block element</a> and it will <del>center</del> centre
               it automatically. So handy!</p>
           </div>
         </div>
